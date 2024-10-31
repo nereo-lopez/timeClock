@@ -8,7 +8,7 @@ document.getElementById('startTimer').addEventListener('click', function() {
     if (isPaused) {
         this.textContent = "Resume Shift";
     } else {
-        this.textContent = "Start Shift";
+        this.textContent = "Shift started";
     }
     
     this.disabled = true;
