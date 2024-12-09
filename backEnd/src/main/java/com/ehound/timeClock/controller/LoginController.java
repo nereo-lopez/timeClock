@@ -10,9 +10,7 @@ public class LoginController {
     private final Login login = new Login();
     @PostMapping("/login")
     public String loginUser(@RequestBody LoginRequest loginRequest) {
-        // Authenticate user
         boolean isAuthenticated = login.authenticate(loginRequest.getUsername(), loginRequest.getPassword());
-
         if (isAuthenticated) {
             return "Login successful!";
         } else {

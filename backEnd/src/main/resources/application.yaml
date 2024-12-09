@@ -8,3 +8,5 @@ spring:
       ddl-auto: update # `create`, `update`, `validate`, or `none`
     show-sql: true
     database-platform: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8082

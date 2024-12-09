@@ -24,11 +24,12 @@ loginButton.addEventListener("click", async (e) => {
 
 async function login(username, password) {
     try {
-        const response = await fetch('http://localhost:8080/api/login', {
+        const response = await fetch('http://localhost:8082/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
+            credentials: 'include',
             body: JSON.stringify({ username: username, password: password }),
         });
 

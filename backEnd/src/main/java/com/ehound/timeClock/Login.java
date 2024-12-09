@@ -4,7 +4,7 @@ public class Login {
 
     // Hardcoded username and password for demonstration purposes
     private static final String USERNAME = "admin";
-    private static final String PASSWORD = "password123";
+    private static final String PASSWORD = "password";
 
     // Method to authenticate user
     public boolean authenticate(String username, String password) {
@@ -17,7 +17,7 @@ public class Login {
 
         // Example input (these would normally come from the user input in a real application)
         String inputUsername = "admin";
-        String inputPassword = "password123";
+        String inputPassword = "password";
 
         // Check if login credentials are correct
         if (login.authenticate(inputUsername, inputPassword)) {
